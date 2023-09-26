@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">{% csrf_token %}
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Edit</span>
+            <input type="text" name="title" class="form-control" aria-describedby="basic-addon1" value="{{ task.title }}">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
